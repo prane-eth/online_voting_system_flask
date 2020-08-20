@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    </head>
+    <body >
+        <div class="container">
+            <div class="row " style="margin-top: 50px">
+                <div class="col-md-6 col-md-offset-3 form-container">
+                    <h2> Register </h2>
+                    <p> Please provide your details below: </p>
+                    <form action = "http://vitapele.pythonanywhere.com/reg_done" method = "POST">
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="name"> Name:</label>
+                                <textarea class="form-control" type="textarea" name="name" id="name" placeholder="Your Name" maxlength="20" rows="1"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="b_year"> Birth year:</label>
+                                <input required class="form-control" type="number" name="b_year" id="b_year" placeholder="Your birth year" rows="1" min="1900" max="2001"></textarea>
+                                <p> To vote, you must be born before 01/01/2001 </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="a_num"> Aadhaar:</label>
+                                <input required type="number" class="form-control" name="a_num" id="a_num" placeholder="Your Aadhaar number" rows="1" min="1000000000000000" max="9999999999999999"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button type="submit" class="btn btn-lg btn-warning btn-block" > Submit </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
